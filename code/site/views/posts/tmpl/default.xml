@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Standard Posts Layout">
+		<message>
+			Posts
+		</message>
+	</layout>
+	<state>
+		<name>Posts</name>
+		<description>Posts</description>
+		<url>
+		</url>	
+		<params>
+			<param name="blog_blog_id" type="text" label="ID Blog" description="Blog ID to display." />
+			<param name="commentmanager" type="list" default='hosted' label="Comment manager" description="">
+				<option value="hosted">Hosted</option>
+				<option value="intensedebate">IntenseDebate</option>
+			</param>
+		</params>
+	</state>
+</metadata>
