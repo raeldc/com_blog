@@ -1,0 +1,21 @@
+/**
+ * com_blog   	Developed using Nooku Framework 0.7  
+ * @package		com_blog
+ * @copyright   Copyright (C) 2010 JooCode di Flavio Copes. All rights reserved.
+ * @license     http://www.gnu.org/copyleft/gpl.html GNU/GPLv2
+ */
+
+This component can be used to create a blog in your website/webapp. 
+
+INSTALLATION
+
+Simply download the package and symlink from the Joomla installation
+
+/administrator: 
+	ln -s com_blog_directory/admin com_blog
+/components: 
+	ln -s com_blog_directory/site com_blog
+
+USAGE
+
+add a com_blog entry to the jos_components table and create the DB tables found in sql/
