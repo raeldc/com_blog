@@ -18,4 +18,24 @@ Simply download the package and symlink from the Joomla installation
 
 USAGE
 
-add a com_blog entry to the jos_components table and create the DB tables found in sql/
+Add a com_blog entry to the jos_components table and create the DB tables found in sql/
+
+com_blog can manage post comments using com_comments (hosted comments), or using IntenseDebate.
+
+WARNING
+
+To use intensedebate, you have to add to your template file both the IntenseDebate account API key
+
+	<script>
+	var idcomments_acct = '*************************';
+	var idcomments_post_id;
+	var idcomments_post_url;
+	</script>
+
+And the code to insert the comments, after calling the component:
+
+	<? if (KRequest::get('get.view', 'string') == 'post' && KRequest::get('get.layout', 'string') != 'form') : ?>
+		<script type='text/javascript' src='http://www.intensedebate.com/js/genericCommentWrapperV2.js'></script>
+	<? endif; ?>
+
+I plan to solve this hassle in a future revision.
