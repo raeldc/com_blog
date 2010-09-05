@@ -1,10 +1,5 @@
 <? if ($post->id) : ?>
 	<div class="post" >
-		<!-- TwitMeme -->
-		<div style="float:right">
-			<script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script>
-		</div>	
-		<!-- END TwitMeme -->
 		
 		<? $date = new KDate(); 
 		$date->setDate($post->created_on); ?>
