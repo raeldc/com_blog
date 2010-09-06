@@ -22,6 +22,8 @@ Add a com_blog entry to the jos_components table and create the DB tables found 
 
 com_blog can manage post comments using com_comments (hosted comments), or using IntenseDebate.
 
+Tested on Nooku Framework rev. 2513
+
 WARNING
 
 To use intensedebate, you have to add to your template file both the IntenseDebate account API key
