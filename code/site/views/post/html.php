@@ -12,7 +12,7 @@ class ComBlogViewPostHtml extends ComDefaultViewHtml
 	public function display()
 	{
 		/* Defaults to 'default' view */
-		if (KFactory::get('lib.joomla.user')->id != 62) {
+		if (KFactory::get('lib.joomla.user')->id != KFactory::get('site::com.blog.model.blogs')->id(KRequest::get('get.blog_blog_id', 'int'))->getItem()->created_by) {
 			$this->setLayout('default'); 
 		}
 	

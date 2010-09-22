@@ -30,4 +30,6 @@
 	<? endif; ?>
 <? else : ?>
 	<div class="post" >No posts</div>
+	<br />
+	<a href="index.php?option=com_blog&view=post&layout=new&blog_blog_id=<?=KRequest::get('get.blog_blog_id', 'int')?>">Add a new post</a>
 <? endif ; ?>
