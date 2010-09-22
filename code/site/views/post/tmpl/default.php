@@ -10,16 +10,11 @@
 		</div>
 		
 		<h2>
-			<b><?=@$post->title?></b>
+			<b><?=$post->title?></b>
 		</h2>
 		
-		<?=@$post->text?>
-				
-		<?
-		$application = JFactory::getApplication();
-		$params =& $application->getPageParameters();			
-		?>
-		
-		<?= @template('comments_'.$params->get('commentmanager')); ?>
+		<?=$post->text?>
+		<? $params =& KFactory::get('lib.joomla.application')->getPageParameters(); ?>
+		<?=@template('comments_'.($params->get('commentmanager') ? $params->get('commentmanager') : 'hosted')) ?>
 	</div>
 <? endif; ?>

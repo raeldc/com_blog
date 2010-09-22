@@ -1,6 +1,6 @@
 <?php
 /**
- * com_blog      Developed using Nooku Framework 0.7 (see README.php for revision number)
+ * com_blog     Developed using Nooku Framework 0.7 (see README.php for revision number)
  * @version     $Id: html.php 42 2010-07-29 16:11:39Z copesc $
  * @package		blog
  * @copyright   Copyright (C) 2010 JooCode di Flavio Copes. All rights reserved.
