@@ -1,3 +1,4 @@
+<? if ($userid == KFactory::get('site::com.blog.model.blogs')->id(KRequest::get('get.blog_blog_id', 'int'))->getItem()->created_by) : ?>
 <!-- New Post -->
 <h2>Add a new post</h2>
 <div> 
@@ -32,3 +33,4 @@
 		</fieldset>
 	</form>	
 </div> 
+<? endif; ?>
